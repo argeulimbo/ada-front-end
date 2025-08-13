@@ -10,8 +10,13 @@ function printElement(elemento) {
     console.log(elemento);
 }
 
-// Usando forEach com uma função anônima
+// Usando forEach com uma função anônima usando 1 parâmetro de ELEMENTO
 numeros.forEach(element => console.log(element)); 
+
+// Usando forEach com uma função anônima usando 3 parâmetros de ELEMENTO, INDEX e o ARRAY COMPLETO
+numeros.forEach((element, index, array) => {
+    console.log(element, index, array);
+})
 
 console.log('---');
 
