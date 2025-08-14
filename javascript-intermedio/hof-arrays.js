@@ -61,7 +61,7 @@ const pessoaEncontrada = pessoas.find((pessoa) => pessoa.nome == 'Marcia');
 console.log(pessoaEncontrada)
 
 /*
-        2. Array.prototype.findIndex(): útil para encontrar um elemento especificado por Index
+        3. Array.prototype.findIndex(): útil para encontrar um elemento especificado por Index
 */
 
 const pessoaEncontradaFindIndex = pessoas.find((pessoa) => pessoa.nome == 'Tutui');
