@@ -13,7 +13,6 @@ const alunos = [
         { nome: 'Sam', media: 65 },
         { nome: 'Katie', media: 90 }        
 ];
-
 // Usando filter
 const mediaSuperiorMap = alunos.filter((alunos) => alunos.media > 85);
 console.log(mediaSuperiorMap)
