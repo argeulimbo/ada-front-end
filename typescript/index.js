@@ -9,7 +9,7 @@ const fs = require('fs');
 
 // 1. Lendo um arquivo JSON.
 
-fs.readFile('/typescript/eslint.js', (erro, dados) => {
+fs.readFile('./eslint.json', (erro, dados) => {
      if (erro) {
           console.log('Erro ao ler o arquivo - ' + erro);
      } else {

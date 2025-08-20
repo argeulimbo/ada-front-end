@@ -1,0 +1,7 @@
+{
+   "aluno": [
+    { "nome": "Argeu" },
+    { "curso": "Typescript" },
+    { "idade": 24 }
+   ]
+}
