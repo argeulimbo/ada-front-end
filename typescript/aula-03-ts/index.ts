@@ -1,5 +1,2 @@
-function somar(n1: number, n2: number) {
-    return n1 + n2;
-}
-
-somar(10, 20);
+let numero = 20;
+const pi = 3.1415;
