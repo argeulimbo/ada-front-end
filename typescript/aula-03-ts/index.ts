@@ -1,4 +1,5 @@
-const n1 = 4;
-const n2 = "5";
+function somar(n1: number, n2: number) {
+    return n1 + n2;
+}
 
-console.log(n1+n2);
+somar(10, 20);
