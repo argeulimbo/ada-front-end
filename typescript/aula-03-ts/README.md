@@ -4,5 +4,6 @@
 2. Instalar o Typescript
   2.1. Global: `npm install -g typescript`
   2.2. Local: `npm install typescript -D`
-3. 
+3. Utilizar o Typescript instalado para transpilar o código (converter TS em JS): `npx tsc index.ts`
+
  
