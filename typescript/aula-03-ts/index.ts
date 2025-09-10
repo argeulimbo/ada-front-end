@@ -19,4 +19,5 @@ idades.push(12);
 idades.push(49);
 idades.push(16);
 
-const menoresDeIdade = idades.filter()
+const menoresDeIdade = idades.filter((idades) => idades < 18.0);
+console.log("Menores de idade -> " + menoresDeIdade);
