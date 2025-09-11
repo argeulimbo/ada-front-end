@@ -1,9 +1,9 @@
 let numero = 20;
 const pi = 3.1415;
 
-const nomeDoUsuario = prompt('Qual o seu nome?');
+// const nomeDoUsuario = prompt('Qual o seu nome?');
 
-console.log(nomeDoUsuario?.toUpperCase());
+// console.log(nomeDoUsuario?.toUpperCase());
 
 const numeros: number[] = [1, 2, 3, 4, 5];
 
@@ -21,3 +21,14 @@ idades.push(16);
 
 const menoresDeIdade = idades.filter((idades) => idades < 18.0);
 console.log("Menores de idade -> " + menoresDeIdade);
+
+
+const pessoaTupla: [String, number] = ['Argeu', 24];
+
+const pessoa = {
+    nome: 'Argeu',
+    idade: 24,
+    profissao: 'Desenvolvedor',
+    altura: 1.75
+}
+
