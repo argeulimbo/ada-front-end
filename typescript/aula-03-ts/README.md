@@ -9,3 +9,6 @@
 3. Utilizar o Typescript instalado para transpilar o código (converter TS em JS): `npx tsc index.ts`
 
 4. Iniciar tsconfig.json: `npx tsc --init`
+
+[ Utilities ]
+`tsc --watch` - para habilitar a compilação em tempo real
