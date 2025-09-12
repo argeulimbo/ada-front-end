@@ -16,10 +16,37 @@ idades.push(16);
 const menoresDeIdade = idades.filter((idades) => idades < 18.0);
 console.log("Menores de idade -> " + menoresDeIdade);
 const pessoaTupla = ['Argeu', 24];
-const pessoa = {
+const pessoaInterface = {
     nome: 'Argeu',
     idade: 24,
     profissao: 'Desenvolvedor',
     altura: 1.75
 };
+const pessoaType = {
+    nome: 'Ailton',
+    idade: 53,
+    profissao: 'Suporte',
+    altura: 1.73
+};
+// Union Types
+// Na function abaixo "escolhaNumero", eu recebo 2 números e um parâmetro opcional criterio
+// Caso critério = greater (maior), então retorna -> Se N1 maior que N2 retorne N1 (pois é o maior)
+// Caso critério = lower, segue a lógica inversa retornando o menor
+function chooseNumber(n1, n2, criterio) {
+    switch (criterio) {
+        case 'greater':
+            return n1 > n2 ? n1 : n2;
+        case 'lower':
+            return n1 < n2 ? n1 : n2;
+        default:
+            const numeroRandom = Math.random();
+            if (numeroRandom >= 0.5)
+                return n1;
+            return n2;
+    }
+}
+const greaterNumber = chooseNumber(10, 2, 'greater');
+const lowerNumber = chooseNumber(10, 2, 'lower');
+console.log('Maior número => ' + greaterNumber);
+console.log('Menor número => ' + lowerNumber);
 //# sourceMappingURL=index.js.map

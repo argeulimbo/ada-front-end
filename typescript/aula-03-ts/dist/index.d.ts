@@ -6,10 +6,21 @@ declare const numerosDois: Array<number>;
 declare const idades: number[];
 declare const menoresDeIdade: number[];
 declare const pessoaTupla: [String, number];
-declare const pessoa: {
+interface PersonInterface {
     nome: string;
     idade: number;
     profissao: string;
     altura: number;
+}
+declare type PersonType = {
+    nome: string;
+    idade: number;
+    altura: number;
+    profissao?: string;
 };
+declare const pessoaInterface: PersonInterface;
+declare const pessoaType: PersonType;
+declare function chooseNumber(n1: number, n2: number, criterio?: 'greater' | 'lower'): number;
+declare const greaterNumber: number;
+declare const lowerNumber: number;
 //# sourceMappingURL=index.d.ts.map
