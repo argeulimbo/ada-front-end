@@ -1,0 +1,14 @@
+{
+  "name": "typescript-poo",
+  "version": "1.0.0",
+  "description": "### Principais Características 1. Reutilização de código;     -> DRY - Dont Repeat Yourself 2. Modularização; 3. Integração simples entre módulos; 4. Reaproveitamento de módulos em outros sistemas;",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^5.9.2"
+  }
+}
