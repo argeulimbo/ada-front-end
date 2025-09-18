@@ -1,7 +1,7 @@
-// Aula POO - Typescript
+/* Aula POO - Typescript
 
 // Classe: abstração
-// Definindo abstração de uma pessoa
+// Definindo abstração de uma pessoa  */
 class Pessoa {
     nome: string;
     idade: number;
@@ -16,12 +16,8 @@ class Pessoa {
     dormir() {
         console.log('Dormindo...');
     }
-
-    toString() {
-        console.log('NOME: ' + this.nome + ' | Idade: ' + this.idade + ' | Altura: ' + this.altura);
-    }
 }
 
 // Criando uma pessoa (objeto) a partir da classe Pessoa (abstração)
 const pessoa1 = new Pessoa('Argeu', 24, 1.80);
-console.log(pessoa1.toString());
+console.log(pessoa1);
