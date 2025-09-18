@@ -81,3 +81,47 @@ const greaterNumber = chooseNumber(10, 2, 'greater');
 const lowerNumber = chooseNumber(10, 2, 'lower');
 console.log('Maior número => ' + greaterNumber);
 console.log('Menor número => ' + lowerNumber);
+
+// Function Somar
+function somar(num1: number, num2: number): number {
+    return num1 + num2;
+}
+console.log('Function soma -> ' + somar(23, 42));
+
+// * Utility Types: A ideia deles é permitir que você crie novos tipos a partir de tipos já existentes
+
+// 1. Partial: torna todos atributos como não obrigatórios
+type PersonPartial = Partial<PersonType>;
+const outraPessoa: PersonPartial = {
+}
+
+// 2. Required: torna todos atributos obrigatórios
+type PersonRequired = Required<PersonType>;
+
+// 3. Pick: escolhe o atributo que deseja obter da interface
+type PersonPicked = Pick<PersonType, 'nome' | 'idade'>
+
+// 4. Omit: esconda o atributo da interface
+type PersonOmit = Omit<PersonType, 'profissao'>;
+
+// 5. Exclude: excluir um parâmetro
+type PersonExcluded = Exclude<PersonType, 'idade'>;
+
+/* 6. Record: cria um tipo Objeto utilizando <chave, valorObjeto>
+        exemplo abaixo:
+        - cria um record de chave string e objeto PersonType
+        - const pessoas => instanciação
+        - chave em string => 118.375.236-90 referente a um documento como CPF
+        - valor em objeto => nome, idade, altura, profissao
+*/
+
+type Pessoas = Record<string, PersonType>
+
+const pessoas: Pessoas = {
+    '118.375.236-90': {
+        nome: 'Argeu',
+        idade: 24,
+        altura: 1.75,
+        profissao: 'Desenvolvedor'
+    }
+}

@@ -49,4 +49,18 @@ const greaterNumber = chooseNumber(10, 2, 'greater');
 const lowerNumber = chooseNumber(10, 2, 'lower');
 console.log('Maior número => ' + greaterNumber);
 console.log('Menor número => ' + lowerNumber);
+// Function Somar
+function somar(num1, num2) {
+    return num1 + num2;
+}
+console.log('Function soma -> ' + somar(23, 42));
+const outraPessoa = {};
+const pessoas = {
+    '118.375.236-90': {
+        nome: 'Argeu',
+        idade: 24,
+        altura: 1.75,
+        profissao: 'Desenvolvedor'
+    }
+};
 //# sourceMappingURL=index.js.map
