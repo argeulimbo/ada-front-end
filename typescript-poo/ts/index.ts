@@ -1,16 +1,38 @@
-/* Aula POO - Typescript
+// Aula POO - Typescript
 
-// Classe: abstração
-// Definindo abstração de uma pessoa  */
-class Pessoa {
+interface IPessoa {
     nome: string;
     idade: number;
     altura: number;
 
-    constructor(nome: string, idade: number, altura: number) {
+    dormir: () => void;
+}
+
+// Classe: abstração
+// Definindo abstração de uma pessoa
+class Pessoa implements IPessoa {
+    nome: string;
+    idade: number;
+    altura: number;
+    private _cpf: string;
+
+    constructor(nome: string, idade: number, altura: number, cpf: string) {
         this.nome = nome;
         this.idade = idade;
         this.altura = altura;
+        this._cpf = cpf;
+    }
+
+    get cpf() { 
+        return this.cpf;
+    }
+
+    set cpf(newCpf: string) {
+        if (newCpf.length !== 14) {
+            throw new Error('CPF length is incorrect!');
+        }
+
+        this._cpf = newCpf;
     }
 
     dormir() {
@@ -19,5 +41,7 @@ class Pessoa {
 }
 
 // Criando uma pessoa (objeto) a partir da classe Pessoa (abstração)
-const pessoa1 = new Pessoa('Argeu', 24, 1.80);
+const pessoa1 = new Pessoa('Argeu', 24, 1.80, '118.375.236-90');
+const pessoa2 = new Pessoa('Ailton', 53, 1.75, '200.987.999-08');
 console.log(pessoa1);
+console.log(pessoa2);
