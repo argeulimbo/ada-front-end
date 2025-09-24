@@ -26,4 +26,4 @@ input.addEventListener('input', (event) => {
 contagem.style.color = 'red';
 contagem.style.padding = '0 2rem';
 contagem.style.border = '1px solid #AAA';
-contagem.style.width = '150px';
+contagem.style.width = '200px';
