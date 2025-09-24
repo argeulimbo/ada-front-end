@@ -19,4 +19,11 @@ diminuir.addEventListener('click', (event) => {
 
 input.addEventListener('input', (event) => {
     console.log('" ' + input.value + ' "');
-})
+});
+
+// Adicionando estilos inline no elemento contagem
+
+contagem.style.color = 'red';
+contagem.style.padding = '0 2rem';
+contagem.style.border = '1px solid #AAA';
+contagem.style.width = '400px';
