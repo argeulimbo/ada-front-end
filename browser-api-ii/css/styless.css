@@ -1,0 +1,15 @@
+.btn {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 4px 12px;
+    border-radius: 5px;   
+}
+
+.btnClick {
+    background: blue;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+}
