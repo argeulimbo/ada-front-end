@@ -1,12 +1,16 @@
+// Atribuindo ID do HTML ao JS
+
+// Tag: form
 const form = document.querySelector('form#todo-form');
+// Tag: input
 const taskTitleInput = document.querySelector('#task-title-input');
+// Tag: ul
 const todoListUl = document.querySelector('#todo-list');
 
 let tasks = []; // [{ title: 'Tarefa 1', done: false }]
 
 function renderTaskOnHTML(taskTitle, done = false) {
     const li = document.createElement('li');
-
     const input = document.createElement('input'); 
     input.setAttribute('type', 'checkbox');
     input.addEventListener('change', (event) => {
